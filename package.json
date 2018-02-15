@@ -1,0 +1,9 @@
+{
+  "name": "township",
+  "version": "1.0.0",
+  "description": "Township game based on CandyBox and Kittens",
+  "main": "index.js",
+  "author": "Nathan Dunn <nathan.odin@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
