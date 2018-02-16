@@ -14,6 +14,9 @@ module.exports = {
             }, {
                 loader: "sass-loader" // compiles Sass to CSS
             }]
+        }, {
+            test: /\.html$/,
+            loader: "raw-loader"
         }]
     }
 };
