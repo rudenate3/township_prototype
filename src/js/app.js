@@ -1,0 +1,1 @@
+const clickHandlers = require('./clickHandlers')
