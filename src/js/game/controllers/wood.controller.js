@@ -1,6 +1,6 @@
-const inventory = require('./inventory.controller');
+const inventory = require('./inventory.controller')
 
 module.exports.onGatherSticksButtonClicked = () => {
   console.log('clicked')
-  inventory.add('sticks', 1);
+  inventory.add('sticks', 1)
 }

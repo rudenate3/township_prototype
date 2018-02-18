@@ -9,10 +9,10 @@ const gameState = {
     fire: false,
     cookedMeat: false
   }
-};
+}
 
 gameState.toggleResourcesTrue = key => {
-  if (!gameState.resources[key]) gameState.resources[key] = true;
-};
+  if (!gameState.resources[key]) gameState.resources[key] = true
+}
 
-module.exports = gameState;
+module.exports = gameState
