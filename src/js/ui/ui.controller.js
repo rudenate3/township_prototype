@@ -1,0 +1,1 @@
+const pageObject = require('../pageObject')

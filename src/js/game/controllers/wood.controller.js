@@ -1,6 +1,16 @@
-const inventory = require('./inventory.controller')
+const WoodController = (function () {
+  function WoodController () {}
 
-module.exports.onGatherSticksButtonClicked = () => {
-  console.log('clicked')
-  inventory.add('sticks', 1)
-}
+  var instance
+  return {
+    getInstance: function () {
+      if (instance == null) {
+        instance = new WoodController()
+        instance.constructor = null
+      }
+      return instance
+    }
+  }
+})()
+
+module.exports = WoodController

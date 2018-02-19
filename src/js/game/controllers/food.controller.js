@@ -1,6 +1,16 @@
-const inventory = require('./inventory.controller')
+const FoodController = (function () {
+  function FoodController () {}
 
-module.exports.onHuntButtonClicked = () => {
-  console.log('clicked')
-  inventory.add('rawMeat', 1)
-}
+  var instance
+  return {
+    getInstance: function () {
+      if (instance == null) {
+        instance = new FoodController()
+        instance.constructor = null
+      }
+      return instance
+    }
+  }
+})()
+
+module.exports = FoodController

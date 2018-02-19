@@ -5,5 +5,5 @@ const pageObject = require('./pageObject')
 const foodController = require('./game/controllers/food.controller')
 const woodController = require('./game/controllers/wood.controller')
 
-pageObject.huntButton.on('click', foodController.onHuntButtonClicked)
-pageObject.gatherSticksButton.on('click', woodController.onGatherSticksButtonClicked)
+pageObject.buttons.huntButton.on('click', foodController.onHuntButtonClicked)
+pageObject.buttons.gatherSticksButton.on('click', woodController.onGatherSticksButtonClicked)

@@ -1,11 +1,21 @@
-const gameState = require('../../gameState')
+const InventoryModel = require('../models/inventory.model')
 
-const inventory = {
-  add: (item, quantity) => {
-    gameState.toggleResourcesTrue(item)
-    inventory[item] = inventory[item] || 0
-    inventory[item] += quantity
+const InventoryController = (function () {
+  function InventoryController () {}
+
+  InventoryController.prototype.add = function (item) {
+    InventoryModel.add(item)
   }
-}
+  var instance
+  return {
+    getInstance: function () {
+      if (instance == null) {
+        instance = new InventoryController()
+        instance.constructor = null
+      }
+      return instance
+    }
+  }
+})()
 
-module.exports = inventory
+module.exports = InventoryController
