@@ -1,2 +1,3 @@
 /* eslint no-unused-vars: "error" */
-const clickHandlers = require('./clickHandlers') // eslint-disable-line no-unused-vars
+const clickHandlers = require('./ui/clickHandlers') // eslint-disable-line no-unused-vars
+// TODO move this into UI

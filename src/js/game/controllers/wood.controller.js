@@ -1,5 +1,14 @@
+const inventoryController = require('../controllers/inventory.controller').getInstance()
+
 const WoodController = (function () {
   function WoodController () {}
+
+  WoodController.prototype.onGatherSticksButtonClicked = () => {
+    inventoryController.add({
+      'name': 'sticks',
+      'quantity': 1
+    })
+  }
 
   var instance
   return {

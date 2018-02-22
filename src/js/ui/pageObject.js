@@ -6,6 +6,6 @@ module.exports = {
     gatherSticksButton: $('#gatherSticksButton')
   },
   resourcesUi: {
-
+    resourcesUiDiv: $('#resources-ui')
   }
 }

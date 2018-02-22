@@ -1,10 +1,12 @@
 const InventoryModel = require('../models/inventory.model')
 
 const InventoryController = (function () {
-  function InventoryController () {}
+  function InventoryController () {
+    this.inventoryModel = new InventoryModel()
+  }
 
   InventoryController.prototype.add = function (item) {
-    InventoryModel.add(item)
+    this.inventoryModel.add(item)
   }
   var instance
   return {
