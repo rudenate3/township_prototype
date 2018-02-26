@@ -1,5 +1,11 @@
+const GameStateModel = require('../models/gameState.model')
+
 const GameState = (function () {
-  function GameState () {}
+  function GameState () {
+    this.gameState = new GameStateModel()
+  }
+
+  
 
   var instance
   return {
