@@ -5,8 +5,6 @@ const GameState = (function () {
     this.gameState = new GameStateModel()
   }
 
-  
-
   var instance
   return {
     getInstance: function () {

@@ -1,8 +1,8 @@
 // Require index.html so it will watch for changes
-require('./index.html')
+require('../index.html')
 
 // Require Javascript files
-require('./src/js/app.js')
+require('./js/app.js')
 
 // Require SCSS files
-require('./src/scss/styles.scss')
+require('./scss/styles.scss')
